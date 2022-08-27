@@ -1,0 +1,126 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css);
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ body nav{
+    background: red;
+    height: 80px;
+    margin-top: 12px;
+
+}
+nav label{
+    font-size: 40px;
+    color: white;
+  line-height: 80px;
+}
+nav ul{
+    float: right;
+    font-size: 30px;
+    display: inline-flex;
+    line-height: 75px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin-right: 30px;
+    padding: 8px 20px;
+}
+nav ul a{
+    margin-left: 40px;
+    color: rgb(246, 240, 240);
+    
+}
+nav ul a:hover{
+    background-color:rgb(233, 102, 9);
+    color: rgb(237, 225, 225);
+    border-radius: 5px;
+    }
+#checkbtn{
+    float: right;
+    line-height: 75px;
+    margin-right: 10px;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ul{
+    left: 0;
+}
+@media(max-width: 895px){
+  #checkbtn{
+    display: block;
+  }
+  nav ul{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(213, 14, 14);
+    display: block;
+    text-align: center;
+    position: fixed;
+    top: 80px;
+    left: 100%;
+
+}
+nav ul li{
+    margin-top: 30px;
+}
+footer ul{
+    font-size: 20px;
+}
+}
+footer{
+    background-color: rgb(74, 6, 232);
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    position: fixed;
+    
+}
+footer p{
+    text-align: center;
+}
+footer ul {
+    font-size: 40px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}
+footer ul li a{
+   margin-left: 20px;
+   color: white;
+   font-size: 30px;
+
+}
+.icon ul li a{
+    margin-left: 30px;
+}
+p{
+    font-size: 25px;
+    color: ghostwhite;
+}
+@media (max-width:895px){
+    footer ul {
+        font-size: 5px;
+        list-style: none;
+        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        
+    }
+    footer{
+        background-color: rgb(74, 6, 232);
+        width: 100%;
+        height: 120px;
+        bottom: 0;
+        position: fixed;
+        
+    }
+}
